@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="coba.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("nav a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>My_Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">BERANDA</a></li>
+                    <li><a href="#profile">PROFIL</a></li>
+                    <li><a href="#audio-video">AUDIO VIDEO</a></li>
+                    <li><a href="#about">TENTANG</a></li>
+                    <li><a href="#news">BERITA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="main-content">
+        <h2>SELAMAT DATANG DI WEBSITE SAYA</h2>
+        <h3>INI ADALAH HALAMAN BERANDA</h3>
+        <div class="buttons">
+            <a href="#" class="btn">MORE INFORMATION?</a>
+            <a href="#" class="btn">SUBSCRIBE</a>
+        </div>
+    </section>
+
+    <section id="profile" class="section">
+        <fieldset>
+        <form action="">
+            <center>
+    <table valign="left">
+        <h2>Profil</h2>
+        <center>
+        <table cellspacing="2">
+            <tr>
+                <td valign="top" rowspan="18">
+                <img src="odaa.jpg" alt="" width="200" height="300">
+                </td>
+                <td colspan="1" align="left" valign="top">Nama: Sauda Sanaky</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Nama Panggilan: Odaa/saudaa</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Jurusan: Manajemen Informatika</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Nim: 16323005</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">TTL: Fakfak, 07 Juni 2006</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Anak Ke: 2</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Alamat: Jl.kayu bosi RT.12</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Agama: Islam</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Warna Kesukaan: Ungu, Coklat, Hitam, Biru, Putih, Abu-abu</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top"><b>Riwayat Pendidikan</b></td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">TK: As-Syafi'iyah</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">SD: Inpres Kayu Merah</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">SMP: Yapis 2 Fakfak</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">SMA: SMA Negeri 2 Fakfak</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">Kuliah: Politeknik Negeri Fakfak</td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top"><b>Sosial Media</b></td>
+            </tr>
+            <tr>
+                <td rowspan="1" align="left" valign="top">IG: <a href="https://www.instagram.com/odasanaky_?igsh=MWt2bHhuZjN0dDNuNQ==">odasanaky_</a></td>
+            </tr>
+        </table>
+        </center>
+    </table>
+    </center>
+    </fieldset>
+    </section>
+
+    <section id="audio-video" class="section">
+        <table cellspacing="1"></table>
+        <fieldset>
+        <h2 align="center">Audio Video Saya</h2>
+            <p align="center">audio</p>
+            <p align="center"><audio controls src="rony parulian.mp3" align="center"></align=>></audio></p>
+            <p align="center">video</p>
+            <p align="center"><video controls autoplay src="vidio oda.mp4" width="250" height="250"></video></p>
+        </fieldset>
+    </section>
+
+    <section id="about" class="section">
+        <fieldset>
+        <h2 align="center">Tentang Saya</h2>
+        <p align="center">hallo guys, nama saya sauda sanaky biasanya 
+            teman teman sya memamnggil saya odaa atau sauda, sekarang saya berumur 18 tahun
+            saya anak kedua dari 4 bersaudara, saya menyukai 
+            warna ungu, coklat, hitam dan masih banyak lagi,
+            makanan kesukaan saya yaitu mie ayam atau nasi 
+            goreng buatan sya sendiri wkwk, sekarang ini saya sedang
+            berkuliah di politeknik negeri fakfak dan mengambil 
+            jurusan manajemen informatika, dulu saya tidak
+            pernah bermimpi akan kuliah di kampus ini ya tpi 
+            takdir berkata lain sesulit ini yah ternyata
+            jurusan ini. saya ke kampus di antar jemput oleh 
+            bapak sya atau abang saya, oh iyaaa Saya
+            sangat senang melihat bulan di malam harii.
+        </p>
+        </fieldset>
+    </section>
+
+    <section id="news" class="section">
+        <fieldset>
+        <h1 align="center">BERITA SAYA</h1>
+        <p align="center">Hallo</p>
+        <p align="center"><iframe width="560" height="315" 
+        src="https://embaranmedia.com/2024/07/25/urgensi-pelaksanaan-konferensi-hmi-cabang-fakfak/"></iframe></p>
+        </fieldset>
+    </section>
+
+    <footer>
+        <p>&copy; sauda sanaky</p>
+      </footer>
+</body>
+</html>
